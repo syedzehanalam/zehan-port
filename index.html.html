@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            background-image: image url(51);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+       
+
+        body {
+            background-image:url("image/515ac9_1d94baec45f042eeaa0b73cf6e4b6873~mv2.webp");
+            background-color: #111;
+            
+            color: #eee;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background: url('WhatsApp Image 2025-01-24 at 13.06.57_86fcc221.jpg') no-repeat center center/cover;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: color-mix(in hsl, white 10%, red);
+            opacity: 0.6;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25rem;
+        }
+
+        nav a {
+            color:white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            background-image: image url("image/515ac9_1d94baec45f042eeaa0b73cf6e4b6873~mv2.webp");
+        }
+
+        .hero-content {
+            flex: 1;
+            color: #fff;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+            animation: slideInLeft 1.5s ease-in-out;
+        }
+
+        .hero-content p {
+            margin: 1rem 0;
+            font-size: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-content button {
+            background: color-mix(in srgb, red, white 10%);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+     
+        .hero img {
+            flex: 1;
+            max-width: 400px;
+            border-radius: 10px;
+            animation: slideInRight 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .about-details {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .about-details div {
+            background: #222;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background: #222;
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin: 1rem 0;
+           color: red;
+            text-align: center;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #222;
+            text-align: center;
+            padding: 1rem 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SYED ZEHAN ALAM</h1>
+        <p>JAVA BACKEND DEVELOPER </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hi There! I'm SYED ZEHAN ALAM</h2>
+            <p>Passionate and dedicated Computer Science student with a strong foundation in Java backend development. Proficient in designing, developing, and maintaining scalable and efficient backend systems. Experienced in working with frameworks like Spring Boot and Hibernate, and skilled in database management with MySQL and PostgreSQL. Adept at problem-solving and optimizing code for performance. Eager to contribute to innovative projects and collaborate with cross-functional teams to deliver high-quality software solutions.</p>
+            <a href="https://drive.google.com/file/d/1zsCx-R6tD2zpnC2k0JIOMm7ftblUTpX-/view?usp=drive_link"><button>DOWNLOAD CV</button></a>
+        </div>
+        <img src="/image/WhatsApp Image 2025-01-24 at 13.06.57_86fcc221.jpg" alt="Profile">
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>Professional Profile - There Is All About Me</p>
+        <div class="about-details">
+            <div>
+                <h3>Date of Birth</h3>
+                <p>06 MARCH 2004</p>
+            </div>
+            <div>
+                <h3>Nationality</h3>
+                <p>INDIAN</p>
+            </div>
+            <div>
+                <h3>Freelance</h3>
+                <p>Available</p>
+            </div>
+            <div>
+                <h3>Languages</h3>
+                <p>ENGLISH - HINDI</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>CRIC INFO</h3>
+                <p>Cricinfo is a project developed using Java Spring Boot that provides real-time cricket match scores. My
+                    role in this project was focused on backend development, implemented with Spring Boot. For data
+                    storage, I utilized MySQL to ensure efficient and reliable management of match data.
+                    </p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>OFFLINE AI LOADER</h3>
+                <p>
+                    Offline is a project developed on the Java Spring Boot framework, utilizing technologies like Spring AI,
+                    Ollama, and Llama. It allows users to access real-world data in offline mode, making it perfect for
+                    situations with limited or no internet connectivity.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Email: alamayan498@gmail.com</p>
+        <p>Phone: +91 6386750050</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ZEHAN. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
